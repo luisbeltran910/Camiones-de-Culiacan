@@ -1,1 +1,37 @@
-<p>menu works!</p>
+<div class="container">
+	
+	<div class="row Encabezado">
+		<div class="Titulo">
+			<h2>Rutas De Camiones De Culiacan</h2>
+		</div>
+		<div>
+			<img class="Imagenredplus Icono" src="../../../assets/img/logocamiones.png">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-1">
+			<label>Ruta a elegir: </label>
+		</div>
+		<div class="col-md-2">
+			<select class="form-control">
+					<option  value="1">Canal 3</option>
+					<option  value="2">Sample</option>
+			</select>
+		</div>
+		<div class="col-md-2">
+			<button onclick="CambiarMapa()" class="btn btn-primary Boton">Aceptar</button>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row">
+		<div id="Mapa">
+			<iframe class="Mapa" id="Mapa" 
+			 src ="https://www.google.com/maps/d/embed?mid=1PISuXdAr6nOqj05boVbYuMklQTI&hl=en_US&ehbc=2E312F" width="640" height="480">"
+			 </iframe>
+		</div>
+	</div>
+
+</div>
