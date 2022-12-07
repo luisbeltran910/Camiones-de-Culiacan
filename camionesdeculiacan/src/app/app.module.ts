@@ -24,7 +24,7 @@ import { HorariosComponent } from './pages/horarios/horarios.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,28 @@
 <div>
     <h3>Horarios:</h3>
-    <p class="nota">Nota: <br> Estos horarios contienen * que significa un apromixado en el tiempo que el camion puede pasar.</p>
+    <p class="nota">Nota: <br> Estos horarios contienen * que significa un aproximado en el tiempo que el camion puede pasar.</p>
     <br>
-    <h4>Aguaruto:</h4>
+    <h4>Ruta Aguaruto - Centro:</h4> <button (click)="toggle()" id="bt">
+        {{mostrar}}
+    </button>
+    <ng-container *ngIf="show">
+    <label>Hora Aproximada:</label>
     <p>5:20-5:50 AM*, 6:20-6:50 AM*, 7:20-7:50 AM*, 8:20-8:50 AM*, 9:20-9:50 AM*, 10:20-10:50 AM*, 11:20-11:50 AM*, 12:20-12:50 PM*, 1:20-1:50 PM*, 2:20-2:50 PM*, 3:20-3:50 PM*, 4:20-4:50 PM*, 5:20-5:50 PM*, 6:20-6:50 PM*, 7:20-7:50 PM*, 8:20-8:50 PM*</p>
+    </ng-container>
+    <br>
+    <h4>Ruta Peni - Centro:</h4> <button (click)="toggle1()" id="bt">
+        {{mostrar1}}
+    </button>
+    <ng-container *ngIf="show1">
+    <label>Hora Aproximada:</label>
+    <p>5:20-5:50 AM*, 6:20-6:50 AM*, 7:20-7:50 AM*, 8:20-8:50 AM*, 9:20-9:50 AM*, 10:20-10:50 AM*, 11:20-11:50 AM*, 12:20-12:50 PM*, 1:20-1:50 PM*, 2:20-2:50 PM*, 3:20-3:50 PM*, 4:20-4:50 PM*, 5:20-5:50 PM*, 6:20-6:50 PM*, 7:20-7:50 PM*, 8:20-8:50 PM*</p>
+    </ng-container>
+    <br>
+    <h4>Ruta Bachigualato - Centro:</h4> <button (click)="toggle2()" id="bt">
+        {{mostrar2}}
+    </button>
+    <ng-container *ngIf="show2">
+    <label>Hora Aproximada:</label>
+    <p>5:20-5:50 AM*, 6:20-6:50 AM*, 7:20-7:50 AM*, 8:20-8:50 AM*, 9:20-9:50 AM*, 10:20-10:50 AM*, 11:20-11:50 AM*, 12:20-12:50 PM*, 1:20-1:50 PM*, 2:20-2:50 PM*, 3:20-3:50 PM*, 4:20-4:50 PM*, 5:20-5:50 PM*, 6:20-6:50 PM*, 7:20-7:50 PM*, 8:20-8:50 PM*</p>
+    </ng-container>
 </div>
