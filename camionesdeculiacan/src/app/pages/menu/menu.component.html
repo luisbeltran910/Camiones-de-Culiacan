@@ -14,13 +14,13 @@
 			<label>Ruta a elegir: </label>
 		</div>
 		<div class="col-md-2">
-			<select class="form-control">
-					<option  value="1">Canal 3</option>
-					<option  value="2">Sample</option>
+			<select class="form-control" [(ngModel)]="ruta">
+				<option value="1">Canal 3</option>
+        		<option value="2">Sample</option>
 			</select>
 		</div>
 		<div class="col-md-2">
-			<button onclick="CambiarMapa()" class="btn btn-primary Boton">Aceptar</button>
+			<button (click)="CambiarMapa()" class="btn btn-primary Boton">Aceptar</button>
 		</div>
 	</div>
 
@@ -29,7 +29,13 @@
 	<div class="row">
 		<div id="Mapa">
 			<iframe class="Mapa" id="Mapa" 
-			 src ="https://www.google.com/maps/d/embed?mid=1PISuXdAr6nOqj05boVbYuMklQTI&hl=en_US&ehbc=2E312F" width="640" height="480">"
+			width="600"
+			height="450"
+			style="border:0"
+			loading="lazy"
+			allowfullscreen
+			referrerpolicy="no-referrer-when-downgrade"
+			[src]="mapa | safe" >
 			 </iframe>
 		</div>
 	</div>
