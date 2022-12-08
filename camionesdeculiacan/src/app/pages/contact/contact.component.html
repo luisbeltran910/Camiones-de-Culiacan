@@ -1,48 +1,48 @@
 <div class="container">
 
-    <form class="content">
+    <form class="content" [formGroup]="contactoForm" (ngSubmit)="enviarData()">
         <h3 class="text-center">Contactanos</h3>
 
             <div class="row">
 
         <!-- firstname  -->
         <div class="mt-2 mb-2 col-lg-6 col-6">
-            <input type="text" class="form-control" placeholder="Nombre(s)">
+            <input type="text" formControlName="nombres" class="form-control" placeholder="Nombre(s)">
         </div>
 
         <!-- lastname  -->
         <div class="mt-2 mb-2 col-lg-6 col-6">
-            <input type="text" class="form-control" placeholder="Apellido(s)">
+            <input type="text" formControlName="apellidos" class="form-control" placeholder="Apellido(s)">
         </div>
 
         <!-- correo  -->
         <div class="mt-2 mb-2 col-lg-12 col-12">
-            <input type="text" class="form-control" placeholder="Correo">
+            <input type="text" formControlName="correo" class="form-control" placeholder="Correo">
         </div>
 
         <!-- celular  -->
         <div class="mt-2 mb-2 col-lg-12 col-12">
-            <input type="text" class="form-control" placeholder="Celular">
+            <input type="text" formControlName="celular" class="form-control" placeholder="Celular">
         </div>
 
         <!-- numunidad  -->
         <div class="mt-2 mb-2 col-lg-6 col-6">
-            <input type="text" class="form-control" placeholder="# De Unidad">
+            <input type="text" formControlName="numunidad" class="form-control" placeholder="# De Unidad">
         </div>
 
         <!-- ruta  -->
         <div class="mt-2 mb-2 col-lg-6s col-6">
-            <input type="text" class="form-control" placeholder="Ruta">
+            <input type="text" formControlName="ruta" class="form-control" placeholder="Ruta">
         </div>
 
         <!-- mensaje  -->
         <div class="mt-2 mb-2 col-lg-12 col-12">
-            <textarea class="form-control" rows="3" placeholder="Queja o Mensaje"></textarea>
+            <textarea class="form-control" formControlName="mensaje" rows="3" placeholder="Queja o Mensaje"></textarea>
         </div>
 
         <!-- enviar  -->
         <div class="col-lg-12 col-12">
-            <button class="btn">Enviar</button>
+            <button class="btn btn-primary">Enviar</button>
         </div>
 
     </div>
